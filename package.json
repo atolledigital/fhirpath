@@ -1,5 +1,5 @@
 {
-  "name": "fhirpath",
+  "name": "@atollee/fhirpath",
   "version": "3.14.1",
   "description": "A FHIRPath engine",
   "main": "src/fhirpath.js",

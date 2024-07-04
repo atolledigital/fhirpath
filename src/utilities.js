@@ -130,6 +130,7 @@ util.pushFn = Function.prototype.apply.bind(Array.prototype.push);
  * @return {ResourceNode[]}
  */
 util.makeChildResNodes = function(parentResNode, childProperty, model) {
+  parentResNode = ResourceNode.makeResNode(parentResNode, parentResNode.resourceType, null, parentResNode.resourceType);
   let childPath = parentResNode.path + '.' + childProperty;
 
   if (model) {

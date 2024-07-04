@@ -1567,11 +1567,8 @@ function asFn(coll, typeInfo) {
     return [];
   }
 
-  if(coll.length > 1) {
-    throw new Error("Expected singleton on left side of 'as', got " + JSON.stringify(coll));
-  }
-
-  return TypeInfo.fromValue(coll[0]).is(typeInfo) ? coll : [];
+  const result = coll.flatMap((element) => TypeInfo.fromValue(element).is(typeInfo) ? [element] : []);
+  return result;
 }
 
 module.exports = {
