@@ -4,6 +4,8 @@
 
 [FHIRPath](http://hl7.org/fhirpath/) implementation in JavaScript.
 
+Modified by Atollee for fixing some bugs.
+
 ## Demo
 Try it out on the [demo page](https://hl7.github.io/fhirpath.js/).
 
