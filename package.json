@@ -58,7 +58,7 @@
   },
   "publishConfig": {
     "registry": "repository.atollee.com/repository/npm-releases"
-  }
+  },
   "repository": "github:HL7/fhirpath.js",
   "license": "SEE LICENSE in LICENSE.md"
 }
